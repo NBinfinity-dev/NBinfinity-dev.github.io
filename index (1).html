@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nixon KOUADJO, développeur front-end</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="w bar">
+<nav><a href="#projets">Projets</a><a href="#competences">Compétences</a><a href="#contact">Contact</a></nav>
+<button class="chip" id="theme" type="button">Mode sombre</button>
+</div></header>
+<main>
+<section id="top"><div class="w">
+<h1>Nixon KOUADJO</h1>
+<p class="role">Développeur front-end</p>
+<p class="lead">Je conçois des interfaces rapides, accessibles et agréables à utiliser, du site vitrine à l'application web.</p>
+<label class="tune"><span>Change la teinte du site</span><input id="hue" type="range" min="0" max="360" value="160"></label>
+</div></section>
+<section id="projets"><div class="w">
+<h2>Projets</h2>
+<div class="filters" id="filters" role="group" aria-label="Filtrer les projets">
+<button class="chip" type="button" data-f="all">Tous</button>
+<button class="chip" type="button" data-f="app">Applis</button>
+<button class="chip" type="button" data-f="site">Sites</button>
+<button class="chip" type="button" data-f="ui">Interfaces</button>
+</div>
+<p class="kind" id="count" aria-live="polite"></p>
+<div id="list"></div>
+</div></section>
+<section id="competences"><div class="w">
+<h2>Compétences</h2>
+<p>HTML sémantique, CSS moderne (Grid, Flexbox, variables), JavaScript, accessibilité et performance. Je travaille avec Git et je teste d'abord sur mobile.</p>
+</div></section>
+<section id="contact"><div class="w">
+<h2>Contact</h2>
+<p>Un projet de site ou d'application ? Écris-moi, je réponds sous deux jours.</p>
+<a class="btn" href="mailto:kouadjonixon5@gmail.com">Écrire un e-mail</a>
+<p class="kind alt">Mon adresse : kouadjonixon5@gmail.com</p>
+<button class="chip" id="copy" type="button">Copier l'adresse</button>
+</div></section>
+</main>
+<script src="script.js" defer></script>
+</body>
+</html>
